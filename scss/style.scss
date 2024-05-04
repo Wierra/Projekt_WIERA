@@ -1,37 +1,78 @@
+@use 'variables';
+
 //-----intuitivnější box-sizing pro všechny prvky na stránce-----
 html {box-sizing: border-box;}
 *, ::before, ::after {box-sizing: inherit;}
 
-    $web-col: rgb(234, 234, 234);
-    $nav-col: rgb(0, 0, 0);
-    $nav-text: rgb(218, 218, 218);
-    $foot-col: rgb(75, 75, 75);
-
-    $font-h: 'Mina', sans-serif;
-    $font-p: 'Nunito', sans serif;
-    $font-ex: 'Shadows Into Light Two', sans serif;
-
-//-----Obecné nastavení webu-----
+//-----základní nastavení webu-----
 body{
-    margin: 0;
-    font-family: var($font-p);
-    background-color: var($web-col);
+    font-family: variables.$font-p;
+    background-color: variables.$web-col;
 }
 
 .wrapper{
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1000px) {
-    .wrapper{
-        max-width: 66rem;
-    }
+.header,.footer{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: $nav-col;
+    background-size: cover;
+    background-position: center;
 }
 
 h1, h2, h3{
-    font-family: var($font-h);
+    font-family: $font-h;
 }
+
 h1{font-size: 2rem;}
 h2{font-size: 1.5rem;}
 h3{font-size: 1.2rem;}
 
+p{
+    line-height: 1.5;
+    font-family: $font-p;
+}
+
+//-----HEADER-----
+.header{
+    margin: 0 auto;
+    // padding: 30px 0;
+ 
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        a{
+            text-decoration: none;
+            color: $nav-text;
+            font-size: 1.5rem;
+            padding: 0 15px;
+        }
+    }
+    &__logo img{
+        max-width: 15rem;
+        // flex: 0 0 100%;
+        // display: flex;
+        justify-content: space-between;
+        // align-items: flex-end;
+    }
+}
+
+
+
+.menu__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    color: $nav-text;
+}
