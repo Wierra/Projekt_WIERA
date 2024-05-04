@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var("Nunito", sans serif);
+  background-color: var(rgb(234, 234, 234));
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 66rem;
+  }
+}
+h1, h2, h3 {
+  font-family: var("Mina", sans-serif);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
