@@ -4,7 +4,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    background-color: $nav-col;
+    background-color: variables.$nav-col;
     background-size: cover;
     background-position: center;
 }
@@ -20,7 +20,7 @@
         margin: 0 auto;
         a{
             text-decoration: none;
-            color: $nav-text;
+            color: variables.$nav-text;
             font-size: 1.5rem;
             padding: 0 15px;
         }

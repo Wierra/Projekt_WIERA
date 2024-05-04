@@ -17,7 +17,7 @@ body{
 }
 
 h1, h2, h3{
-    font-family: $font-h;
+    font-family: variables.$font-h;
 }
 
 h1{font-size: 2rem;}
@@ -26,10 +26,10 @@ h3{font-size: 1.2rem;}
 
 p{
     line-height: 1.5;
-    font-family: $font-p;
+    font-family: variables.$font-p;
 }
 
 
 .footer{
-    color: $nav-text;
+    color: variables.$nav-text;
 }
