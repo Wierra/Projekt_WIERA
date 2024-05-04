@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+<!--My style.css-->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title> {{ title }} </title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="" alt="Logo">
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list"><a class="menu__link" href="/">Domů</a></li>
+                        <li class="menu__list"><a class="menu__link" href="/o_me/">O mě</a></li>
+                        <li class="menu__list"><a class="menu__link" href="/nabizim/">Nabízím</a></li>
+                        <li class="menu__list"><a class="menu__link" href="/portfolio/">Portfolio</a></li>
+                        <li class="menu__list"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main>
+            {{ content | safe }}
+        </main>
+
+        <footer class="footer">
+            <div class="footer__contact">
+                <h2>Kontakt</h2>
+                <p><span class="footer__item">Telefon: +420 732 528 331</span></p>
+                <p><span class="footer__item">E-mail: <a href="mailto:wiera@wiera.cz">wiera@wiera.cz</a></span></p>
+                <p><span class="footer__item"><a href="/kontakt/">Fakturační údaje</a></span></p>
+            </div>
+            
+            <div class="footer__copyright">&copy; CopyWIERA.cz 2024 | WebDesign a konzultace
+            </div>
+        
+            <div class="footer__resources">Všechna práva vyhrazena | Použité <a href="/resources/">zdroje</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

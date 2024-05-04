@@ -15,3 +15,8 @@ termín odevzdání do 17.05.2024 (doporučeno odevzdat do 13.05.2024)
 ## Odevzdání
 - přes odkaz na GitHub - do založeného úkolu Závěrečný projekt, 
 - v GitHub repozitáři odkaz na funčkní vezri webu přes Nelify.
+
+
+Google Fonts
+- nadpisy Mina
+- texty Nunito
