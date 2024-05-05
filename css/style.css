@@ -32,9 +32,15 @@
   padding: 0;
 }
 
+@media screen and (min-width: 800px) {
+  .header__inner {
+    margin: 0 20px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .header__inner {
     width: 66rem;
+    margin: 0 auto;
   }
 }
 .footer {
@@ -59,10 +65,62 @@
   font-size: 1.5rem;
   padding: 0 15px;
 }
+.footer__contact {
+  width: 100%;
+  margin: 40px 0;
+  font-size: 1.5rem;
+}
+.footer__contact h2 {
+  font-size: 2.5rem;
+}
+.footer__copyright {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.footer__resources {
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
 
+@media screen and (min-width: 800px) {
+  .footer__cover {
+    margin: 0 20px;
+  }
+  .footer__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    margin: 40px 0;
+    font-size: 1.5rem;
+  }
+  .footer__contact h2 {
+    grid-column: 1/span2;
+  }
+  .footer__contactitem--phone, .footer__contactitem--mail {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .footer__contactitem--bill {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
 @media screen and (min-width: 1100px) {
   .footer__cover {
     width: 66rem;
+    margin: 0 auto;
+  }
+  .footer__contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    margin: 40px 0;
+    font-size: 1.5rem;
+  }
+  .footer__contact h2 {
+    grid-column: 1/span3;
   }
 }
 html {

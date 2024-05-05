@@ -23,10 +23,69 @@
             padding: 0 15px;
         }
     }
+    &__contact{
+        width: 100%;
+        margin: 40px 0;
+        font-size: 1.5rem;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+    &__copyright{
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    &__resources{
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+}
 }
 
-@media screen and (min-width: 1100px) {
-    .footer__cover{
-        width: 66rem;
+
+
+@media screen and (min-width: 800px){
+    .footer{
+        &__cover{
+            margin: 0 20px;
+        }
+        &__contact{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            width: 100%;
+            margin: 40px 0;
+            font-size: 1.5rem;
+                h2{
+                    grid-column: 1/span2;
+                }
+                &item--phone, &item--mail{
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                &item--bill{
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+        }
     }
+}
+
+@media screen and (min-width: 1100px){
+    .footer{
+        &__cover{
+            width: 66rem;
+            margin: 0 auto;
+            }
+        &__contact{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            width: 100%;
+            margin: 40px 0;
+            font-size: 1.5rem;
+                h2{
+                    grid-column: 1/span3;
+                }
+            }
+        }
 }
