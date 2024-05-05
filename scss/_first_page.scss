@@ -1,0 +1,23 @@
+@use 'variables';
+
+//----FIRST PAGE (index)----
+.banner{
+    margin: 0 auto;
+    background-image: url(/img/img_first.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: 0 0 0 0.8;
+    // opacity: 0.7;
+    height: 35em;
+    &__main{
+        text-align: center;
+        line-height: 1.1;
+    }
+    &--letter{
+        // color: variables.$foot-col; 
+        opacity: 0.5;
+    }
+    &__under{
+        text-align: center;
+    }
+}

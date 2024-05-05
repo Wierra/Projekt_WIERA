@@ -9,18 +9,18 @@
     background-size: cover;
     background-position: center;
     color: variables.$nav-text;
+    opacity: 0.8;
 
     &__cover{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 0 20px;
         flex-direction: column;
         a{
             text-decoration: none;
             color: variables.$nav-text;
             font-size: 1.5rem;
-            padding: 0 15px;
         }
     }
     &__contact{
