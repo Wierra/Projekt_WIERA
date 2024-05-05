@@ -1,16 +1,40 @@
 @use 'variables';
 
+.header{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$nav-col;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+ 
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__logo img{
+        max-width: 15rem;
+        justify-content: space-between;
+    }
+}
+
+//---HAMBURGER MENU--- 
 .menu{
     &__checkbox{
     position: absolute;
     left: -9999px;  /*funkčně stejné jako display: none*/
     }
     &__list{
+        display: none;
         margin: 0;
         padding: 0;
         list-style: none;
         background-color: variables.$nav-col;
-        // opacity: 0.8;
+        justify-content: center;
+        align-items: center;
     }
     &__item{
         border-bottom: 1px solid gainsboro;
@@ -19,28 +43,32 @@
         display: block;
         padding: 15px;
         text-decoration: none;
-        color: variable.$nav-text;
+        color: variables.$nav-text;
+        font-size: 1.5rem;
         &:hover{
-            background-color: variable.$nav-text;
-            color: variable.$nav-col;
+            background-color: variables.$nav-text;
+            color: variables.$nav-col;
         }
     }
     &__toggler{
         cursor: pointer;
+        & img{
+            width: 80px;
+            margin: 20px;
+        }
     }
-
-}
-.toggler--img{
-    width: 10px;
 }
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 820px){
     .menu__checkbox:checked ~ .menu__list{
         display: block;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 821px){
+    .header__inner{
+        margin: 0 20px;
+    }
     .menu{
         &__toggler{
             display: none;
@@ -50,61 +78,18 @@
         }
         &__item{
             border-bottom: 0;
-            border-right: 1px solid whitesmoke;
         }
     }
 }
 
-// .header{
-//     margin: 0 auto;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: variables.$nav-col;
-//     background-size: cover;
-//     background-position: center;
-//     opacity: 0.8;
-//     // padding: 30px 0;
- 
-//     &__inner{
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         margin: 0 auto;
-//         a{
-//             text-decoration: none;
-//             color: variables.$nav-text;
-//             font-size: 1.5rem;
-//             padding: 0 15px;
-//         }
-//     }
-//     &__logo img{
-//         max-width: 15rem;
-//         // flex: 0 0 100%;
-//         // display: flex;
-//         justify-content: space-between;
-//         // align-items: flex-end;
-//     }
-// }
 
-// // .menu__list{
-// //     list-style: none;
-// //     display: flex;
-// //     justify-content: center;
-// //     align-items: center;
-// //     margin: 0;
-// //     padding: 0;
-// // }
+.menu__list{
 
-
-// @media screen and (min-width: 800px) {
-//     .header__inner{
-//         margin: 0 20px;
-//     }
+}
     
-// }
-// @media screen and (min-width: 1100px) {
-//     .header__inner{
-//         width: 66rem;
-//         margin: 0 auto;
-//     }
-// }
+@media screen and (min-width: 1100px) {
+    .header__inner{
+        width: 66rem;
+        margin: 0 auto;
+    }
+}
