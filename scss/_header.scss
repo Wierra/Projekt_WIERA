@@ -4,9 +4,6 @@
     &__checkbox{
     position: absolute;
     left: -9999px;  /*funkčně stejné jako display: none*/
-    &:checked ~ .menu__list{
-        display: block;
-        }
     }
     &__list{
         margin: 0;
@@ -33,10 +30,15 @@
     }
 
 }
-img{
+.toggler--img{
     width: 10px;
 }
 
+@media screen and (max-width: 799px){
+    .menu__checkbox:checked ~ .menu__list{
+        display: block;
+    }
+}
 
 @media screen and (min-width: 800px){
     .menu{
