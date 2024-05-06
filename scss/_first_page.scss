@@ -5,10 +5,6 @@
     margin: 0 auto;
     height: 40em;
     width: 100%;
-    // background-image: url(/img/img_first.png);
-    // background-repeat: no-repeat;
-    // background-position: right;
-    // opacity: 0.7;
     position: relative;
     z-index: -2;
     overflow: hidden;
@@ -17,12 +13,10 @@
     &__profile{
         width: 650px;
         position: absolute;
-        // right: 250px;
         top: 0;
         right: 0;
         z-index: -1;
         opacity: 0.5;
-
     }
     &__main{
         text-align: center;
@@ -43,11 +37,13 @@
 //----NABÍZÍM----
 .summary{
     z-index: 100;
+    margin: 60px 20px;
 
     &__work{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
     }
     &__web{
         width: 100%;
@@ -55,18 +51,24 @@
         border: 3px solid gray;
         border-radius: 20px;
         margin-bottom: 20px;
+        a{
+            text-decoration: none;
+        }
         h2{
-            font-size: 2.5rem;
             margin: 10px 0;
+            color: variables.$nav-col;
         }
         p{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     &__img{
         width: 100%;
         border-radius: 20px;
-        
+        filter: grayscale(99%);
+        &:hover{
+            filter: none;
+        }
     }
 }
 
@@ -80,24 +82,36 @@
             right: 0;
             z-index: -1;
             opacity: 1;
+        }
     }
-    
-
+    .summary{
+        &__work{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        &__img{
+            width: 100%
+        }
+        &__web{
+            margin: 0;
+        }
+    }
 }
 
-    @media screen and (min-width: 1100px) {
-        .summary{
-            width: 66rem;
-            margin: 0 auto;
-            gap: 20px;
+@media screen and (min-width: 1100px) {
+    .summary{
+        width: 66rem;
+        margin: 0 auto;
+
+        &__work{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr;
+            margin-bottom: 60px; 
+        }
 
-            &__work{
-            width: 20rem;
-            }
-
+        &__img{
+            width: 100%;
         }
     }
 }

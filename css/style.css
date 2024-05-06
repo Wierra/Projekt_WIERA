@@ -195,8 +195,10 @@
 
 .summary {
   z-index: 100;
+  margin: 60px 20px;
 }
 .summary__work {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -208,16 +210,23 @@
   border-radius: 20px;
   margin-bottom: 20px;
 }
+.summary__web a {
+  text-decoration: none;
+}
 .summary__web h2 {
-  font-size: 2.5rem;
   margin: 10px 0;
+  color: rgb(8, 8, 8);
 }
 .summary__web p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .summary__img {
   width: 100%;
   border-radius: 20px;
+  filter: grayscale(99%);
+}
+.summary__img:hover {
+  filter: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -232,18 +241,30 @@
     z-index: -1;
     opacity: 1;
   }
+  .summary__work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .summary__img {
+    width: 100%;
+  }
+  .summary__web {
+    margin: 0;
+  }
 }
-@media screen and (min-width: 800px) and (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .summary {
     width: 66rem;
     margin: 0 auto;
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
   }
   .summary__work {
-    width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
+  }
+  .summary__img {
+    width: 100%;
   }
 }
 html {
@@ -259,6 +280,10 @@ html {
 body {
   font-family: "Nunito", sans serif;
   background-color: rgb(234, 234, 234);
+}
+
+main {
+  width: 100%;
 }
 
 .wrapper {
