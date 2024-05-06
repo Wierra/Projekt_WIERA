@@ -43,17 +43,13 @@
     &__icon{
         width: 60px;
         margin: 10px;
-        &--small{
-            width: 25px;
-            margin-left: 10px;
-        }
     }
-    &__text, a{
+    &__text{
         margin-left: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+        }
     &__end{
         text-align: center;
     }

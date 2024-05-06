@@ -23,6 +23,8 @@
     <title> {{ title }} </title>
 </head>
 <body>
+
+<!--header-->
     <div class="wrapper">
         <header class="header">
             <div class="header__inner">
@@ -44,11 +46,13 @@
                 </nav>
             </div>
         </header>
+<!--header end-->
 
         <main>
             {{ content | safe }}
         </main>
 
+<!--footer-->
         <footer class="footer">
             <div class="footer__cover">
                 <div class="footer__contact">
@@ -74,13 +78,13 @@
                     </div>
 
                     <div class="footer__resources">
-                        <p class="footer__text">Všechna práva vyhrazena | Použité <a href="/resources/">zdroje
-                        <img class="footer__icon--small" src="/img/icons/tutorial.png" alt=""></a></p>
+                        <p class="footer__text--source">Všechna práva vyhrazena | Použité <a href="/resources/">zdroje</a></p>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+<!--footer end-->
 
 </body>
 </html>

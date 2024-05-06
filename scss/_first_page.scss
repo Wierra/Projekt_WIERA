@@ -8,7 +8,7 @@
     position: relative;
     z-index: -2;
     overflow: hidden;
-    background-color: white;
+    background-color: variables.$main-col;
 
     &__profile{
         width: 650px;
@@ -74,6 +74,48 @@
     }
 }
 
+//-----VOLEJTE / PIŠTE----
+.rezervation{
+    text-align: center;
+    background-color: variables.$main-col;
+    padding: 100px 20px;
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+
+    }
+    button{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: rgb(128, 128, 128);
+        color: variables.$main-col;
+        border: none;
+        font-family: variables.$font-h;
+        font-size: 1.2rem;
+
+        &:hover{
+            background-color: rgb(128, 128, 128, 0.5);
+            color: variables.$foot-col;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: variables.$main-col;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            color: variables.$foot-col;
+        }
+    }
+    img{
+        width: 10%;
+        margin-right: 10px;
+    }
+}
+
+
+//-----MEDIA QUERY-----
 @media screen and (min-width: 800px){
     .banner{
         position: relative;
@@ -109,11 +151,16 @@
         &__work{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            margin-bottom: 60px; 
+            margin-bottom: 120px; 
         }
 
         &__img{
             width: 100%;
         }
     }
+    .web--shift{
+        position: relative;
+        transform: translateY(70px);
+    }
 }
+

@@ -45,6 +45,7 @@
 .menu__link:hover {
   background-color: rgb(218, 218, 218);
   color: rgb(8, 8, 8);
+  border-radius: 30px;
 }
 .menu__toggler {
   cursor: pointer;
@@ -122,11 +123,7 @@
   width: 60px;
   margin: 10px;
 }
-.footer__icon--small {
-  width: 25px;
-  margin-left: 10px;
-}
-.footer__text, .footer a {
+.footer__text {
   margin-left: 10px;
   display: flex;
   align-items: center;
@@ -168,7 +165,7 @@
   position: relative;
   z-index: -2;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .banner__profile {
   width: 650px;
@@ -230,6 +227,43 @@
   filter: none;
 }
 
+.rezervation {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 100px 20px;
+}
+.rezervation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.rezervation button {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: "Mina", sans-serif;
+  font-size: 1.2rem;
+}
+.rezervation button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: rgb(75, 75, 75);
+}
+.rezervation a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rezervation a:hover {
+  color: rgb(75, 75, 75);
+}
+.rezervation img {
+  width: 10%;
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 800px) {
   .banner {
     position: relative;
@@ -262,10 +296,14 @@
   .summary__work {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 60px;
+    margin-bottom: 120px;
   }
   .summary__img {
     width: 100%;
+  }
+  .web--shift {
+    position: relative;
+    transform: translateY(70px);
   }
 }
 html {
