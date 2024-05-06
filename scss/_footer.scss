@@ -1,6 +1,5 @@
 @use 'variables';
 
-
 .footer{
     margin: 0 auto;
     align-items: center;
@@ -10,7 +9,6 @@
     background-position: center;
     color: variables.$nav-text;
     opacity: 0.8;
-
     &__cover{
         display: flex;
         align-items: center;
@@ -20,7 +18,7 @@
         a{
             text-decoration: none;
             color: variables.$nav-text;
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
         }
     }
     &__contact{
@@ -29,44 +27,42 @@
         font-size: 1.5rem;
         h2{
             font-size: 2.5rem;
+            text-align: center;
         }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    &__icon{
+        width: 60px;
+        margin: 10px;
+        &--small{
+            width: 25px;
+            margin-left: 10px;
+        }
+    }
+    &__text, a{
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__end{
+        text-align: center;
     }
     &__copyright{
         font-size: 1.5rem;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     &__resources{
-        font-size: 1.3rem;
-        padding-bottom: 20px;
-}
-}
-
-
-
-@media screen and (min-width: 800px){
-    .footer{
-        &__cover{
-            margin: 0 20px;
-        }
-        &__contact{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2,1fr);
-            width: 100%;
-            margin: 40px 0;
-            font-size: 1.5rem;
-                h2{
-                    grid-column: 1/span2;
-                }
-                &item--phone, &item--mail{
-                    grid-column: 1;
-                    grid-row: 2;
-                }
-                &item--bill{
-                    grid-column: 2;
-                    grid-row: 2;
-                }
-        }
+        font-size: 1.1rem;
+        margin-bottom: 20px;
     }
 }
 

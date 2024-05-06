@@ -32,7 +32,7 @@
                 <nav class="menu">
 
                     <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-                    <label for="menu-checkbox" class="menu__toggler"><div class="toggler--img"><img  src="/img/icons/menu.png"> Menu</div></label>
+                    <label for="menu-checkbox" class="menu__toggler"><div class="toggler--img"><img  src="/img/icons/menu.png"></div></label>
 
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="/">Domů</a></li>
@@ -53,18 +53,34 @@
             <div class="footer__cover">
                 <div class="footer__contact">
                     <h2>Kontakt</h2>
-                    <p><span class="footer__item item--phone">Telefon: <b>+420 732 528 331</b></span></p>
-                    <p><span class="footer__item item--mail">E-mail: <a href="mailto:wiera@wiera.cz"><b>wiera@wiera.cz</b></a></span></p>
-                    <p><span class="footer__item item--bill"><a href="/kontakt/">Fakturační údaje</a></span></p>
+                    <div class="footer__item">
+                        <img class="footer__icon" src="/img/icons/phone.png" alt="phone">
+                        <p class="footer__text">+420 732 528 331</p>
+                    </div>
+
+                    <div class="footer__item">
+                        <img class="footer__icon" src="/img/icons/e-mail.png" alt="post">
+                        <p class="footer__text"><a href="mailto:wiera@wiera.cz">wiera@wiera.cz</a></p>
+                    </div>
+
+                    <div class="footer__item">
+                        <img class="footer__icon" src="/img/icons/note.png">
+                        <p class="footer__text"><a href="/kontakt/">Fakturační údaje</a></p>
+                    </div>
                 </div>
 
-                <div class="footer__copyright">&copy; CopyWIERA.cz <b>2024</b> | WebDesign a konzultace
-                </div>
-                
-                <div class="footer__resources">Všechna práva vyhrazena | Použité <a href="/resources/">zdroje</a>
+                <div class="footer__end">
+                    <div class="footer__copyright">&copy;CopyWIERA.cz <b>2024</b> | WebDesign
+                    </div>
+
+                    <div class="footer__resources">
+                        <p class="footer__text">Všechna práva vyhrazena | Použité <a href="/resources/">zdroje
+                        <img class="footer__icon--small" src="/img/icons/tutorial.png" alt=""></a></p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
+
 </body>
 </html>
