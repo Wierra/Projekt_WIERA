@@ -51,6 +51,7 @@
         border: 3px solid gray;
         border-radius: 20px;
         margin-bottom: 20px;
+        position: relative;
         a{
             text-decoration: none;
         }
@@ -61,6 +62,7 @@
         p{
             font-size: 1rem;
         }
+
     }
     &__img{
         width: 100%;
