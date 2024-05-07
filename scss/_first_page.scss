@@ -9,7 +9,6 @@
     z-index: -2;
     overflow: hidden;
     background-color: variables.$main-col;
-
     &__profile{
         width: 650px;
         position: absolute;
@@ -38,7 +37,6 @@
 .summary{
     z-index: 100;
     margin: 60px 20px;
-
     &__work{
         width: 100%;
         display: flex;
@@ -62,7 +60,6 @@
         p{
             font-size: 1rem;
         }
-
     }
     &__img{
         width: 100%;
@@ -82,7 +79,6 @@
     h2{
         font-size: 2.5rem;
         margin-bottom: 20px;
-
     }
     button{
         padding: 20px;
@@ -114,17 +110,11 @@
     }
 }
 
-
 //-----MEDIA QUERY-----
 @media screen and (min-width: 800px){
     .banner{
         position: relative;
         &__profile{
-            width: 650px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;
             opacity: 1;
         }
     }
@@ -147,13 +137,11 @@
     .summary{
         width: 66rem;
         margin: 0 auto;
-
         &__work{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             margin-bottom: 120px; 
         }
-
         &__img{
             width: 100%;
         }
