@@ -10,21 +10,7 @@
     &__grid{
         padding: 0 20px;
         display: grid;
-        // position: relative;
         margin: 0 auto;
-        // z-index: 0;
-        // overflow: hidden;
-    }
-    &__grid h1{
-        margin: 40px 0;
-        font-size: 3rem;
-    }
-    &__grid h2{
-        margin-top: 40px;
-        font-size: 2rem;
-    }
-    &__grid p{
-        font-size: 1.5rem;
     }
     &__icon img{
         width: 60px;
@@ -65,5 +51,6 @@
 @media screen and (min-width: 1100px) {
     .contact__grid{
             width: 66rem;
+            padding: 0;
         }
-}
+    }

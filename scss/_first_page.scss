@@ -6,9 +6,10 @@
     height: 40em;
     width: 100%;
     position: relative;
-    z-index: -2;
+    z-index: -1;
     overflow: hidden;
     background-color: variables.$main-col;
+
     &__profile{
         width: 650px;
         position: absolute;
@@ -82,12 +83,14 @@
     }
     button{
         padding: 20px;
+        width: 300px;
         border-radius: 20px;
         background-color: rgb(128, 128, 128);
         color: variables.$main-col;
         border: none;
         font-family: variables.$font-h;
         font-size: 1.2rem;
+        margin-bottom: 20px;
 
         &:hover{
             background-color: rgb(128, 128, 128, 0.5);
@@ -100,6 +103,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.7rem;
+
         &:hover{
             color: variables.$foot-col;
         }

@@ -8,7 +8,9 @@
     background-size: cover;
     background-position: center;
     opacity: 0.8;
- 
+    position: relative;
+    z-index: 1;
+
     &__inner{
         display: flex;
         align-items: center;
@@ -35,9 +37,16 @@
         background-color: variables.$nav-col;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 250px;
+        z-index: 999px;
+        text-align: center;
+        font-weight: 650;
     }
     &__item{
-        border-bottom: 1px solid gainsboro;
+        border-top: 1px solid gainsboro;
     }
     &__link{
         display: block;
@@ -64,6 +73,7 @@
     .menu__checkbox:checked ~ .menu__list{
         display: block;
     }
+
 }
 
 @media screen and (min-width: 825px){
@@ -76,9 +86,12 @@
         }
         &__list{
             display: flex;
+            position: relative;
+            width: 100%;
+            z-index: 0;
         }
         &__item{
-            border-bottom: 0;
+            border-top: 0;
         }
     }
 }
