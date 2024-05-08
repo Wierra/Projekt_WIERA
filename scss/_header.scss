@@ -7,10 +7,9 @@
     background-color: variables.$nav-col;
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
     position: relative;
     z-index: 1;
-
+    // opacity: 0.8;
     &__inner{
         display: flex;
         align-items: center;
@@ -18,7 +17,7 @@
         margin: 0 auto;
     }
     &__logo img{
-        max-width: 15rem;
+        width: 15rem;
         justify-content: space-between;
     }
 }
@@ -41,9 +40,10 @@
         right: 0;
         top: 100%;
         width: 250px;
-        z-index: 999px;
+        z-index: 2;
         text-align: center;
         font-weight: 650;
+        // opacity: 1;
     }
     &__item{
         border-top: 1px solid gainsboro;
@@ -69,14 +69,13 @@
     }
 }
 
-@media screen and (max-width: 824px){
+@media screen and (max-width: 827px){
     .menu__checkbox:checked ~ .menu__list{
         display: block;
     }
-
 }
 
-@media screen and (min-width: 825px){
+@media screen and (min-width: 828px){
     .header__inner{
         margin: 0 20px;
     }

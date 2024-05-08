@@ -3,7 +3,6 @@
 @use 'footer';
 @use 'first_page';
 @use 'contact';
-@use 'about_me';
 
 //-----intuitivnější box-sizing pro všechny prvky na stránce-----
 html {box-sizing: border-box;}
@@ -12,7 +11,7 @@ html {box-sizing: border-box;}
 //-----základní nastavení webu-----
 body{
     font-family: variables.$font-p;
-    background-color: variables.$web-col;
+    background-color: variables.$main-col;
 }
 
 main{
@@ -28,10 +27,7 @@ h1, h2, h3{
 }
 
 h1{font-size: 6rem;}
-h2{
-    font-size: 3rem;
-    margin: 40px 0;
-}
+h2{font-size: 3rem;}
 h3{font-size: 2rem;}
 h4{font-size: 1.5rem;}
 
