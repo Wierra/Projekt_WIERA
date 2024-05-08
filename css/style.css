@@ -39,6 +39,7 @@
   z-index: 2;
   text-align: center;
   font-weight: 650;
+  border-radius: 20px;
 }
 .menu__item {
   border-top: 1px solid gainsboro;
@@ -63,12 +64,12 @@
   margin: 20px;
 }
 
-@media screen and (max-width: 827px) {
+@media screen and (max-width: 799px) {
   .menu__checkbox:checked ~ .menu__list {
     display: block;
   }
 }
-@media screen and (min-width: 828px) {
+@media screen and (min-width: 800px) {
   .header__inner {
     margin: 0 20px;
   }
