@@ -196,14 +196,19 @@
   text-align: center;
 }
 .banner__title {
-  width: 80%;
+  width: 60%;
   background-color: rgba(215, 215, 215, 0.5);
   padding: 50px 0;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1600px) {
+  .banner__title {
+    background-color: rgba(215, 215, 215, 0);
+  }
+}
 .summary {
-  background-color: pink;
+  background-color: rgb(217, 217, 217);
   padding: 60px 20px;
 }
 .summary__work {
@@ -341,14 +346,15 @@
 }
 @media screen and (min-width: 1100px) {
   .summary {
-    width: 66rem;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 0 150px 0;
   }
   .summary__work {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 40px;
+    width: 66rem;
+    margin: 0 auto;
   }
   .summary__img {
     width: 100%;
@@ -417,6 +423,22 @@
     padding: 0;
   }
 }
+.pages {
+  background-color: rgb(253, 253, 253);
+  width: 100%;
+}
+.pages__grid {
+  padding: 0 20px;
+  display: grid;
+  margin: 0 auto;
+}
+.pages__grid h2 {
+  margin: 40px 0;
+}
+.pages__grid h3 {
+  margin-top: 40px;
+}
+
 html {
   box-sizing: border-box;
 }

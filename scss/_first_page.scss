@@ -30,16 +30,25 @@
     //     height: auto;
     // }
     &__title{
-        width: 80%;
+        width: 60%;
         background-color: rgba(215, 215, 215, 0.5);
         padding: 50px 0;
         margin: 0 auto;
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .banner{
+        &__title{
+            background-color:rgba(215, 215, 215, 0.0);
+        }
+    }
+    
+}
+
 //----NABÍZÍM----
 .summary{
-    background-color: pink;
+    background-color: variables.$summary-col;
     padding: 60px 20px;
         &__work{
         width: 100%;
@@ -196,13 +205,15 @@
 
 @media screen and (min-width: 1100px) {
     .summary{
-        width: 66rem;
+        // width: 66rem;
         margin: 0 auto;
-        padding: 60px 0;
+        padding: 60px 0 150px 0;
         &__work{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             margin-bottom: 40px;
+            width: 66rem;
+            margin: 0 auto;
         }
         &__img{
             width: 100%;

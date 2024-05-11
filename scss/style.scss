@@ -3,6 +3,7 @@
 @use 'footer';
 @use 'first_page';
 @use 'contact';
+@use 'grid';
 
 //-----intuitivnější box-sizing pro všechny prvky na stránce-----
 html {box-sizing: border-box;}
