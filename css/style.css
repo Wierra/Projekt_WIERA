@@ -453,7 +453,7 @@
 .grid__web p {
   font-size: 1rem;
 }
-.grid__img {
+.grid__web__img {
   width: 100%;
   border-radius: 20px;
 }
@@ -469,6 +469,28 @@
   }
   .grid__web {
     margin-bottom: 0;
+  }
+  .grid__web.web--service {
+    display: flex;
+    grid-column: span 2;
+  }
+  .grid__web.web--service img {
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+    filter: grayscale(99%);
+  }
+  .grid__web.web--service img.img--right {
+    border-radius: 0 20px 20px 0;
+  }
+  .grid__web.web--service p {
+    font-size: 1.3rem;
+  }
+  .grid__web.web--service.service--right {
+    background-color: rgb(217, 217, 217);
+    flex-direction: row-reverse;
+  }
+  .grid__service {
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 1100px) {
