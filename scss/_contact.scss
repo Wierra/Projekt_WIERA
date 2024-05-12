@@ -60,3 +60,29 @@
             padding: 0;
         }
 }
+
+//-----RESOURCES-----
+.resources{
+    .resources{
+        &__item{
+            margin-bottom: 20px;
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 800px) {
+    .resources{
+        display: grid;
+        grid-template-columns: 350px 700px;
+        align-items: center;
+        &__item{
+            margin-bottom: 20px;
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
