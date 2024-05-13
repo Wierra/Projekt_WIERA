@@ -3,10 +3,11 @@
 //----NABÍZÍM----
 .grid{
     padding: 60px 20px;
-        &__work{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+    
+    &__work{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     }
     &__web{
         width: 100%;
@@ -28,12 +29,13 @@
         &.service--right{
             background-color: variables.$summary-col;
         }
+        &.web--service{
+            filter: grayscale(99%);
+        }
     }
     &__img{
         width: 100%;
         border-radius: 20px;
-        filter: grayscale(99%);
-
     }
 }
 
