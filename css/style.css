@@ -54,6 +54,7 @@
 .menu__link:hover {
   background-color: rgb(218, 218, 218);
   color: rgb(68, 68, 68);
+  border-radius: 30px;
 }
 .menu__toggler {
   cursor: pointer;
@@ -283,6 +284,7 @@
     margin-bottom: 40px;
     width: 66rem;
     margin: 0 auto;
+    text-align: center;
   }
   .summary__img {
     width: 100%;
@@ -435,17 +437,17 @@
     padding: 0;
   }
 }
-.resources .resources__item {
+.resources__item {
   margin-bottom: 20px;
 }
-.resources .resources__item img {
+.resources__item img {
   width: 300px;
 }
 
 @media screen and (min-width: 800px) {
   .resources {
     display: grid;
-    grid-template-columns: 350px 700px;
+    grid-template-columns: 350px 1fr;
     align-items: center;
   }
   .resources__item {

@@ -58,7 +58,7 @@
         &:hover{
             background-color: variables.$nav-text;
             color: variables.$nav-col;
-            // border-radius: 30px;
+            border-radius: 30px;
         }
     }
     &__toggler{
@@ -69,6 +69,8 @@
         }
     }
 }
+
+
 
 @media screen and (max-width: 799px){
     .menu__checkbox:checked ~ .menu__list{
