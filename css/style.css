@@ -39,7 +39,6 @@
   z-index: 2;
   text-align: center;
   font-weight: 650;
-  border-radius: 20px;
 }
 .menu__item {
   border-top: 1px solid gainsboro;
@@ -54,7 +53,6 @@
 .menu__link:hover {
   background-color: rgb(218, 218, 218);
   color: rgb(68, 68, 68);
-  border-radius: 30px;
 }
 .menu__toggler {
   cursor: pointer;
@@ -81,6 +79,9 @@
     position: relative;
     width: 100%;
     z-index: 0;
+  }
+  .menu__link:hover {
+    border-radius: 30px;
   }
   .menu__item {
     border-top: 0;

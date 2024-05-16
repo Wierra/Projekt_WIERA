@@ -43,8 +43,6 @@
         z-index: 2;
         text-align: center;
         font-weight: 650;
-        border-radius: 20px;
-
     }
     &__item{
         border-top: 1px solid gainsboro;
@@ -58,7 +56,6 @@
         &:hover{
             background-color: variables.$nav-text;
             color: variables.$nav-col;
-            border-radius: 30px;
         }
     }
     &__toggler{
@@ -69,8 +66,6 @@
         }
     }
 }
-
-
 
 @media screen and (max-width: 799px){
     .menu__checkbox:checked ~ .menu__list{
@@ -91,6 +86,12 @@
             position: relative;
             width: 100%;
             z-index: 0;
+            // border-radius: 20px;
+        }
+        &__link{
+            &:hover{
+                border-radius: 30px;
+            }
         }
         &__item{
             border-top: 0;
