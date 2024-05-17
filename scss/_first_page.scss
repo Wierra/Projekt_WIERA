@@ -232,5 +232,34 @@
             margin-bottom: 0;
         }
     }
+}
 
+.backspace{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    color: variables.$web-col;
+    background: variables.$nav-col;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50%;
+    &:hover{
+        color: variables.$nav-col;
+        font-weight: 800;
+        background: variables.$backspace-col;
+        text-decoration: none;
+    }
+    &:focus{
+        color: variables.$main-col;
+    }
+    &.active{
+        transform: translate3d(0,0,0);
+    }
+    & img{
+        width: 30px;
+        margin: 9px 0 0 7px;
+    }
 }
