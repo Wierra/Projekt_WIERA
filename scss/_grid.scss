@@ -29,9 +29,12 @@
         &.service--right{
             background-color: variables.$summary-col;
         }
-        &.web--service{
-            filter: grayscale(99%);
-        }
+        // &.web--service{
+        //     filter: grayscale(99%);
+        //     &:hover{
+        //         filter: none;
+        //     }
+        // }
     }
     &__img{
         width: 100%;

@@ -242,6 +242,12 @@
   margin-bottom: 20px;
   position: relative;
 }
+.summary__web:hover img {
+  filter: none;
+}
+.summary__web:hover h3 {
+  color: rgb(133, 133, 133);
+}
 .summary__web a {
   text-decoration: none;
 }
@@ -249,16 +255,13 @@
   margin: 10px 0;
   color: rgb(68, 68, 68);
 }
-.summary__web p {
+.summary p {
   font-size: 1rem;
 }
 .summary__img {
   width: 100%;
   border-radius: 20px;
   filter: grayscale(99%);
-}
-.summary__img:hover {
-  filter: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -523,9 +526,6 @@
 }
 .grid__web.service--right {
   background-color: rgb(217, 217, 217);
-}
-.grid__web.web--service {
-  filter: grayscale(99%);
 }
 .grid__img {
   width: 100%;

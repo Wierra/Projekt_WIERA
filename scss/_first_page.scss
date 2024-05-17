@@ -76,6 +76,14 @@
         border-radius: 20px;
         margin-bottom: 20px;
         position: relative;
+        &:hover{
+            img{
+                filter:none;
+            }
+            h3{
+                color: variables.$backspace-col;
+            }
+        }
         a{
             text-decoration: none;
         }
@@ -83,19 +91,17 @@
             margin: 10px 0;
             color: variables.$nav-col;
         }
-        p{
-            font-size: 1rem;
-        }
+    }
+    p{
+        font-size: 1rem;
     }
     &__img{
         width: 100%;
         border-radius: 20px;
         filter: grayscale(99%);
-        &:hover {
-            filter: none;
-        }
     }
 }
+
 
 @media screen and (min-width: 800px){
     .summary{
